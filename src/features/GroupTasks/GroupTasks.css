@@ -1,0 +1,17 @@
+.group-tasks {
+  width: 500px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin: 3rem auto;
+  transition: var(--transition);
+}
+.group-tasks__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.group-tasks__top {
+  padding: 1.2rem;
+}
