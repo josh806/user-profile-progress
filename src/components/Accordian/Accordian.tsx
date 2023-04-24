@@ -5,7 +5,7 @@ import './Accordian.css';
 
 type Props = {
   title: string;
-  content: JSX.Element;
+  content: JSX.Element[];
 };
 
 export default function Accordian({ title, content }: Props) {

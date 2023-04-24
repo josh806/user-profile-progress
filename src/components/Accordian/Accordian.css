@@ -2,17 +2,18 @@
   border: var(--border);
   border-radius: var(--border-radius);
 }
-.accordians > * {
+.accordian__header,
+.accordian__content > * {
   padding: 1rem;
-}
-.accordians > *:not(:last-child) {
-  border-bottom: var(--border);
 }
 
 .accordian__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.accordian:not(:last-child) .accordian__header {
+  border-bottom: var(--border);
 }
 .accordian__header > *,
 .accordian__status {
@@ -46,4 +47,7 @@
 
 .accordian--active .accordian__arrow {
   transform: rotate(180deg);
+}
+.accordian--active:not(:last-child) .accordian__content {
+  border-bottom: var(--border);
 }
