@@ -6,7 +6,9 @@ import * as types from '../../types';
 import * as utils from '../../utils/index';
 import { getGroupsData } from '../../services/ApiService';
 
-export const ProgressContext = React.createContext();
+export const ProgressContext = React.createContext<
+  React.Dispatch<React.SetStateAction<number>>
+>(() => console.log('Error in Context'));
 
 export default function GroupTasks() {
   const [progressTotalValue, setProgressTotalValue] = useState(0);

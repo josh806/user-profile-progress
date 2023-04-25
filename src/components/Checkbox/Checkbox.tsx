@@ -7,7 +7,7 @@ import { ProgressContext } from '../../features/index';
 
 type Props = {
   index: number;
-  setTasks: any;
+  setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
   label: string;
   value?: number;
   checked: boolean;

@@ -11,7 +11,7 @@ export default function ProgressBar({ bgColor, percentage }: Props) {
     width: `${percentage}%`,
   };
 
-  const progressBarLabelStyles = {
+  const progressBarLabelStyles: React.CSSProperties = {
     position: 'absolute',
     left: 'calc(100% + 0.5rem)',
     color: 'inherit',

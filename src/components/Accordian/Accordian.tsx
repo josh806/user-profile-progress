@@ -16,7 +16,7 @@ export default function Accordian({ title, checkboxes }: Props) {
   const [allChecked, setAllChecked] = useState(false);
   const [tasks, setTasks] = useState(checkboxes);
 
-  const contentEl = useRef<HTMLElement>();
+  const contentRef = useRef<HTMLDivElement>(null);
 
   // Update tasks' checked status
   useEffect(() => {
@@ -46,12 +46,14 @@ export default function Accordian({ title, checkboxes }: Props) {
         </div>
       </div>
       <div
-        ref={contentEl}
+        ref={contentRef}
         className="accordian__content"
         style={
           isActive
             ? {
-                height: contentEl.current.scrollHeight,
+                height: contentRef.current
+                  ? contentRef.current.scrollHeight
+                  : 0,
               }
             : { height: '0' }
         }
