@@ -9,5 +9,5 @@ User profile widget to track a user's profile progress.
 
 ## Getting started
 - Install all dependecies - From `/` run `npm i`
-- Create `/.env` (see examples .env-example)
-- Start: `npm run dev`
+- Create `/.env` (see example /.env-example)
+- Start: `npm run build`
