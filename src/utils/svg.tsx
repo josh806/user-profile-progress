@@ -25,7 +25,7 @@ export const arrowDown = (
     x="0px"
     y="0px"
     viewBox="0 0 512 512"
-    enable-background="new 0 0 512 512"
+    enableBackground="new 0 0 512 512"
   >
     <path
       d="M256,294.1L383,167c9.4-9.4,24.6-9.4,33.9,0s9.3,24.6,0,34L273,345c-9.1,9.1-23.7,9.3-33.1,0.7L95,201.1
@@ -38,10 +38,8 @@ export const checkmark = (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <path
       fill="none"
-      stroke="currentColor"
-      stroke-linecap="square"
-      stroke-miterlimit="10"
-      stroke-width="44"
+      strokeLinecap="square"
+      strokeWidth="44"
       d="M416 128 192 384l-96-96"
     />
   </svg>
