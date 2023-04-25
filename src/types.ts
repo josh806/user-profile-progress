@@ -7,3 +7,6 @@ export type Task = {
   description: string;
   value: number;
 };
+export type ErrorType = {
+  errorMsg: string;
+};
