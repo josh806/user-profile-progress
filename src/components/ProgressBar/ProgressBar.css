@@ -1,0 +1,22 @@
+.progress-bar {
+  background-color: #f2fbfa;
+  border-radius: 5rem;
+  height: 1.1rem;
+}
+.progress-bar__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  max-width: 100%;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--color-green);
+  width: 80%;
+  border-radius: 5rem;
+  transition: var(--transition);
+}
+.progress-bar__label {
+  font-size: 0.7rem;
+  color: #ffffff;
+}
