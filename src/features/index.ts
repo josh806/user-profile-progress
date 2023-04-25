@@ -1,3 +1,3 @@
-import GroupTasks from './GroupTasks/GroupTasks';
+import GroupTasks, { ProgressContext } from './GroupTasks/GroupTasks';
 
-export { GroupTasks };
+export { GroupTasks, ProgressContext };

@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 
 import { GroupTasks } from './features/index';
