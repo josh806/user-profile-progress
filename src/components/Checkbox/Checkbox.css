@@ -1,12 +1,18 @@
-label.checkbox {
+.checkbox {
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
 }
 .checkbox input[type='checkbox'] {
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
+}
+
+.checkbox__custom,
+.checkbox__label {
+  cursor: pointer;
 }
 
 .checkbox__custom,
@@ -17,13 +23,12 @@ label.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin-right: 0.8rem;
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   border: 1px solid;
   border-color: var(--color-dark-grey);
-  border-radius: var(--border-radius);
+  border-radius: 0.3rem;
 }
 .checkbox__custom svg {
   opacity: 0;
@@ -40,4 +45,8 @@ label.checkbox {
 }
 .checkbox input[type='checkbox']:checked ~ .checkbox__custom svg {
   opacity: 1;
+}
+
+.checkbox__label {
+  padding-left: 0.8rem;
 }

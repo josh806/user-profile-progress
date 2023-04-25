@@ -2,18 +2,28 @@
   border: var(--border);
   border-radius: var(--border-radius);
 }
-.accordian__header,
-.accordian__content > * {
+
+.accordian--highlight .accordian__header {
+  color: var(--color-green);
+}
+.accordian:not(:last-child) {
+  border-bottom: var(--border);
+}
+.accordian__header {
   padding: 1rem;
+}
+.accordian__item {
+  padding: 1rem 1.7rem;
+}
+.accordian__item:last-child {
+  padding-bottom: 2rem;
 }
 
 .accordian__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.accordian:not(:last-child) .accordian__header {
-  border-bottom: var(--border);
+  cursor: pointer;
 }
 .accordian__header > *,
 .accordian__status {
@@ -29,9 +39,8 @@
 }
 .accordian__icon svg {
   display: block;
-  width: 22px;
+  width: 20px;
 }
-
 .accordian__arrow {
   width: 22px;
   margin-left: 0.6rem;
@@ -39,6 +48,7 @@
 }
 .accordian__status {
   color: var(--color-grey);
+  font-size: 0.9rem;
 }
 .accordian__arrow svg {
   display: block;
@@ -47,7 +57,4 @@
 
 .accordian--active .accordian__arrow {
   transform: rotate(180deg);
-}
-.accordian--active:not(:last-child) .accordian__content {
-  border-bottom: var(--border);
 }

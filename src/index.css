@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -105,6 +108,7 @@ section {
 body {
   line-height: 1;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #333333;
 }
 ol,
 ul {
@@ -135,4 +139,5 @@ table {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
