@@ -27,7 +27,7 @@ function App() {
       <div className="app">
         <div className="container">
           <GroupTasks
-            title="Grouped Tasks"
+            title="Lodgify Grouped Tasks"
             data={profileData || {}}
             error={error}
           />
